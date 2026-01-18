@@ -9,13 +9,13 @@ import NeuralNetwork from './pages/NeuralNetwork'
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/neural" element={<NeuralNetwork />} />
+      <Route element={<Layout />}>
         <Route path="projects" element={<Projects />} />
         <Route path="notes" element={<Notes />} />
         <Route path="settings" element={<Settings />} />
       </Route>
-      <Route path="/neural" element={<NeuralNetwork />} />
     </Routes>
   )
 }
