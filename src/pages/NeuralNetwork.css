@@ -1,0 +1,58 @@
+.neural-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.neural-container {
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+.neural-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: calc(var(--safe-area-top) + 20px) 20px 20px;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(10, 10, 15, 0.8) 0%, transparent 100%);
+}
+
+.back-button {
+  display: inline-block;
+  pointer-events: auto;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 14px;
+  padding: 8px 12px;
+  margin: -8px -12px 12px;
+  border-radius: 8px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.back-button:active {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+}
+
+.neural-overlay h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  background: linear-gradient(135deg, #a78bfa, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.neural-overlay p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+  opacity: 0.7;
+}

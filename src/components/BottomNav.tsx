@@ -3,6 +3,7 @@ import './BottomNav.css'
 
 const navItems = [
   { path: '/', label: 'Home', icon: '⌂' },
+  { path: '/neural', label: 'Neural', icon: '✧' },
   { path: '/projects', label: 'Projects', icon: '◈' },
   { path: '/notes', label: 'Notes', icon: '☰' },
   { path: '/settings', label: 'Settings', icon: '⚙' },
