@@ -53,23 +53,23 @@ function Home() {
       positions[i * 3 + 1] = y
       positions[i * 3 + 2] = z
 
-      // Warm glow colors: pink, orange, gold
+      // Cool glow colors: cyan, blue, green
       const colorChoice = Math.random()
       if (colorChoice < 0.33) {
-        // Pink/magenta
-        colors[i * 3] = 1.0
-        colors[i * 3 + 1] = 0.2 + Math.random() * 0.3
-        colors[i * 3 + 2] = 0.6 + Math.random() * 0.4
+        // Cyan
+        colors[i * 3] = 0.0 + Math.random() * 0.3
+        colors[i * 3 + 1] = 0.8 + Math.random() * 0.2
+        colors[i * 3 + 2] = 1.0
       } else if (colorChoice < 0.66) {
-        // Orange
-        colors[i * 3] = 1.0
-        colors[i * 3 + 1] = 0.4 + Math.random() * 0.3
-        colors[i * 3 + 2] = 0.1 + Math.random() * 0.2
+        // Blue/purple
+        colors[i * 3] = 0.4 + Math.random() * 0.3
+        colors[i * 3 + 1] = 0.2 + Math.random() * 0.3
+        colors[i * 3 + 2] = 1.0
       } else {
-        // Gold/yellow
-        colors[i * 3] = 1.0
-        colors[i * 3 + 1] = 0.7 + Math.random() * 0.3
-        colors[i * 3 + 2] = 0.2 + Math.random() * 0.3
+        // Green/teal
+        colors[i * 3] = 0.1 + Math.random() * 0.2
+        colors[i * 3 + 1] = 0.9 + Math.random() * 0.1
+        colors[i * 3 + 2] = 0.5 + Math.random() * 0.3
       }
 
       sizes[i] = 0.3 + Math.random() * 0.4
@@ -112,10 +112,10 @@ function Home() {
     const glowPoints = new THREE.Points(glowGeometry, glowMaterial)
     scene.add(glowPoints)
 
-    // Connection lines with warm color
+    // Connection lines with cool color
     const lineGeometry = new THREE.BufferGeometry()
     const lineMaterial = new THREE.LineBasicMaterial({
-      color: 0xff6b35,
+      color: 0x00d4ff,
       transparent: true,
       opacity: 0.12,
       blending: THREE.AdditiveBlending

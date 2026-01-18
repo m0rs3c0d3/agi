@@ -32,12 +32,12 @@
   font-weight: 800;
   letter-spacing: -2px;
   margin: 0 0 16px;
-  background: linear-gradient(135deg, #ff6b6b, #ffa502, #ffdd59);
+  background: linear-gradient(135deg, #00d4ff, #7c3aed, #10b981);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: 0 0 60px rgba(255, 107, 107, 0.5);
-  filter: drop-shadow(0 0 30px rgba(255, 165, 2, 0.4));
+  text-shadow: 0 0 60px rgba(0, 212, 255, 0.5);
+  filter: drop-shadow(0 0 30px rgba(124, 58, 237, 0.4));
 }
 
 .home-content p {
